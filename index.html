@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GopiKart - E-Commerce Store</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <div class="navbar">
+      <h1 class="logo">GopiKart</h1>
+      <nav class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">About</a>
+      </nav>
+      <div class="cart" onclick="toggleCart()">🛒 <span id="cart-count">0</span></div>
+    </div>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="hero">
+    <h2>Welcome to GopiKart</h2>
+    <p>Shop the best deals on premium products</p>
+  </section>
+
+  <!-- Products -->
+  <section class="products">
+    <div class="product">
+      <img src="images/shoe.webp" alt="Running Shoe">
+      <h3>Running Shoes</h3>
+      <p>Comfortable and stylish.</p>
+      <p class="price">₹1,999</p>
+      <button onclick="addToCart('Running Shoes', 1999)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="images/watch.webp" alt="Smartwatch">
+      <h3>Smartwatch</h3>
+      <p>Track your fitness smartly.</p>
+      <p class="price">₹3,499</p>
+      <button onclick="addToCart('Smartwatch', 3499)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="images/bag.webp" alt="Backpack">
+      <h3>Backpack</h3>
+      <p>Carry everything in style.</p>
+      <p class="price">₹1,299</p>
+      <button onclick="addToCart('Backpack', 1299)">Add to Cart</button>
+    </div>
+  </section>
+
+  <!-- Cart Sidebar -->
+  <div class="cart-panel" id="cart-panel">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <p class="total">Total: ₹<span id="total-amount">0</span></p>
+    <button class="checkout-btn">Checkout</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
