@@ -22,3 +22,4 @@ function updateCartDisplay() {
 function toggleCart() {
   document.getElementById("cart-panel").classList.toggle("open");
 }
+
